@@ -1,0 +1,57 @@
+body{
+  background-image: url(/media/iportfolio/images/fondomadera.jpg) 
+}
+#navbar{
+  background-image: url(/media/fondobi2.jpeg);
+  text-decoration: black;
+}
+#header{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+
+p {
+    color: rgb(46, 248, 10);
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #imgh{
+    transition: transform 0.3s ease;
+  }
+
+ #imgh:hover {
+   transform: translateY(-10px);
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+@keyframes cambio-de-tamaño {
+    0% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.5); /* Aumenta el tamaño en un 50% */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Aplicación de la animación */
+  #profile {
+    animation: cambio-de-tamaño 3s ease-in-out forwards; /* Aplica la animación durante 3 segundos con un efecto ease-in-out y repítela infinitamente */
+  }
+
+  

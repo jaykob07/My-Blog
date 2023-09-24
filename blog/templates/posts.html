@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>some personal projects</h1>
+
+{% for post in articulos %}
+
+    <h2>{{post.tittle}}</h2> 
+    <p>{{post.description|truncatechars:25}}</p> <!--- de esta maenra limito la cantidad de caracteres en cada publicacion-->
+    <p>{{post.date|date:'M d Y'|upper}}</p>
+    <div>
+        <img src="{{post.image.url}}" alt="{{post.title}}" class="col-md-4 p-4">
+    </div>
+    
+
+    <a href="{% url 'blog:post_details' post.id %}">{{post.tittle}}</a>
+
+{% endfor %}
+
+{% endblock %}

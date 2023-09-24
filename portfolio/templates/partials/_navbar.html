@@ -1,0 +1,16 @@
+{% load static %}
+
+<nav id="navbar"class="navbar navbar-expand-lg navbar-dark">                                                            <div class="container">
+    <a class="navbar-brand fw-bold fst-italic" href="/blog">My Projects</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="btn btn-primary btn-sm d-flex align-items-center bnt-hover" href="{% static 'portfolio/Cv.pdf' %}" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </div>
+</nav>
+

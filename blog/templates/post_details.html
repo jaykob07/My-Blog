@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>{{vistas.tittle}}</h2>
+
+<p>{{vistas.description}}</p>
+
+<img src="{{vistas.image.url}}" alt="{{post.title}}">
+<a href="{% url 'home' %}">Return to home</a>
+{% endblock content %}
