@@ -15,4 +15,4 @@ Welcome to my blog built with Django, HTML, CSS, and SQLite3. This project is a 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-blog.git
+   git clone https://github.com/jaykob07/My-Blog.git
