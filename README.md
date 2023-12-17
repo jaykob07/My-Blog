@@ -6,7 +6,7 @@ Welcome to my blog built with Django, HTML, CSS, and SQLite3. This project is a 
 
 - **Django:** I use the Django web framework to build the backend of my blog. Django provides a robust and scalable structure for handling server-side logic.
 
-- **HTML and CSS:** The frontend of my blog is developed using HTML for structure and CSS for styling. This ensures an attractive and responsive user interface.
+- **HTML and CSS:** The frontend of my blog is developed using HTML for structure and CSS whit BOOTSTRAP for styling. This ensures an attractive and responsive user interface.
 
 - **SQLite3:** The SQLite3 database is used to store and manage the blog data. SQLite3 is a lightweight and easy-to-set-up database, perfect for small to medium-sized projects.
 
