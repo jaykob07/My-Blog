@@ -29,7 +29,7 @@
   <p>Also, I have experience in SQL, MySQL and JavaScript.</p>
 
   {% for project in lista_projects %}
-  <div class="col-md-4 p-4">
+  <div class="col-md-3 p-3">
     <div class="card bg-transparent card-project border-0">
       <img id="imgh" src="{{project.image.url }}" class="card-img-top"/>
 
@@ -38,10 +38,10 @@
         <h2 class="text-light">{{ project.title }}</h2>
         <p>{{ project.description }}</p>
 
-        {% if project.url %}
+        <!-- {% if project.url %}
         <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="__blank" rel="noreferrer">Visit the
           Project</a>
-        {% endif %}
+        {% endif %} -->
       </div>
     </div>
   </div>
@@ -52,63 +52,4 @@
 {% endblock %}
   
 
-
-<!--
-<div class="col md-4">
-    <div class="card bg-black">
-        <div class="card-body">
-            <h2 class="">{{project.title}}</h2>
-    <p>{{project.description}}</p>
-    
-        <img src="{{project.image.url}}" class="img-fluid" alt="{{project.title}}" >
-
-        {% if project.url %}
-    <a href="{{project.url}}" class="text-white">{{project.url}}</a>    
-    {% endif %}
-       </div>
-    </div>
-</div>
-
-
-
-
-<div class="container" >
-        
-        <div id="images_skills" class="row d-flex justify-content-center align-items-center gap-auto">
-           
-          <div id="html5" class="col-md-4">
-            <img  src="media/iportfolio/images/html.png" class="img-fluid">
-
-          </div>
-          <div id="css3" class="col-md-4">
-            <img  src="media/iportfolio/images/css.png" class="img-fluid">
-          </div>
-
-          <div class="col-md-4">
-
-            <img  id="pytn" src="media/iportfolio/images/django.png" class="img-fluid">
-          </div>
-        </div>
-      </div>
-
-
-        <div class="col-md-4 p-4">
-
-    <div id="container" class="card bg-light">
-    
-      <div class="card-body">
-        <h2>{{project.title}}</h2>
-        <p>{{project.description}}</p>
-        <img src="{{project.image.url}}" class="img-fluid" alt="{{project.title}}">
-  
-        {% if project.url%}
-        <a href="{{project.url}}">{{project.url}}</a>
-        {% endif %}
-  
-      </div>
-
-    </div>
-  
-  </div>
--->
 

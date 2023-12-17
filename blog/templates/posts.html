@@ -2,20 +2,25 @@
 
 {% block content %}
 
+{% load static %}
+
 <h1>Some personal projects</h1>
 
 {% for post in articulos %}
+<br>
+    <h2 class="m-3">{{post.tittle}}</h2> 
 
-    <h2>{{post.tittle}}</h2> 
-    <p>{{post.description|truncatechars:25}}</p> <!--- de esta maenra limito la cantidad de caracteres en cada publicacion-->
+    <p>{{post.description|truncatechars:400}}</p> <!--- de esta maenra limito la cantidad de caracteres en cada publicacion-->
     <p>{{post.date|date:'M d Y'|upper}}</p>
     <div>
-        <img  class="rounded-5 col-md-4 p-6" src="{{post.image.url}}" alt="{{post.title}}" class="col-md-4 p-4">
+        <img  class="rounded-5 col-md-4 p-6" src="{{post.image.url}}" alt="{{post.title}}">
     </div>
     
-
+<div>
     <a href="{{post.urls}}">Take a look at the code</a>
-
+</div>
+    
+    <br>
 {% endfor %}
 
 {% endblock %}
